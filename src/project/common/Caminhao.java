@@ -1,0 +1,34 @@
+package project.common;
+
+public class Caminhao extends MeiosDeTransporte{
+	
+	public Caminhao(String marca, String modelo, String cor, String placa){
+		super.marca = marca;
+		super.modelo = modelo;
+		super.cor = cor;
+		super.placa = placa;
+	}
+	
+	@Override
+	public String toString() {
+		String text = "========================\n";
+		text += "Tipo: Caminhão\n";
+		text += "Placa:" + super.placa + "\n";
+		text += "Modelo:" + super.modelo + "\n";
+		text += "Marca:" + super.marca + "\n";
+		text += "Cor:" + super.cor + "\n";
+		text += "========================\n";
+		
+		return text;
+	}
+	
+	@Override
+	public String getTipo() {
+		return "caminhao";
+	}
+	
+	@Override
+	public double valorMulta() {
+		return super.getNMultas() * 56;
+	}
+}
