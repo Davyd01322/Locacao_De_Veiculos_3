@@ -1,5 +1,5 @@
 # Locação De Veiculos 3
-### Como Excutar?
+### Como Executar?
 Primeiro Ajuste as variáveis de ip nas classes: ClientTransportLayer.java, TransportLayer.java e ServerTransportLayer.
 Em seguida abra 3 terminais: Um executa a classe ServerAplicationLayer.java, os outros dois executam respectivamente MessageQueue.java e 
 ClientApplicationLayer.java. Depois disso você poderá visualizar o menu de opções do lado cliente e enviar as requisições.
